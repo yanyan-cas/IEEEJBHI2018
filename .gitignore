@@ -4,3 +4,5 @@
 *.pdf
 *.gz
 *.cls
+*.bst
+*.bib
