@@ -248,23 +248,6 @@ M.~Belkin and P.~Niyogi, ``Laplacian eigenmaps for dimensionality reduction and
   data representation,'' \emph{Neural computation}, vol.~15, no.~6, pp.
   1373--1396, 2003.
 
-\bibitem{Bengio2009deeplearning}
-\BIBentryALTinterwordspacing
-Y.~Bengio, ``Learning deep architectures for ai,'' \emph{Found. Trends Mach.
-  Learn.}, vol.~2, no.~1, pp. 1--127, Jan. 2009. [Online]. Available:
-  \url{http://dx.doi.org/10.1561/2200000006}
-\BIBentrySTDinterwordspacing
-
-\bibitem{christopher2006pattern}
-M.~B. Christopher, \emph{Pattern Recognition and Machine Learning}.\hskip 1em
-  plus 0.5em minus 0.4em\relax Springer-Verlag New York, 2006.
-
-\bibitem{ren2017robust}
-Y.~Ren, P.~Zhao, Y.~Sheng, D.~Yao, and Z.~Xu, ``Robust softmax regression for
-  multi-class classification with self-paced learning,'' in \emph{Proceedings
-  of the 26th International Joint Conference on Artificial Intelligence}.\hskip
-  1em plus 0.5em minus 0.4em\relax AAAI Press, 2017, pp. 2641--2647.
-
 \bibitem{afonso}
 V.~Afonso, W.~J. Tompkins, T.~Nguyen, and S.~Luo, ``Ecg beat detection using
   filter banks,'' \emph{Biomedical Engineering, IEEE Transactions on}, vol.~46,
@@ -294,6 +277,11 @@ E.~Levina and P.~J. Bickel, ``Maximum likelihood estimation of intrinsic
   dimension,'' in \emph{Advances in neural information processing systems},
   2005, pp. 777--784.
 
+\bibitem{rajesh2018classification}
+K.~N. Rajesh and R.~Dhuli, ``Classification of imbalanced ecg beats using
+  re-sampling techniques and adaboost ensemble classifier,'' \emph{Biomedical
+  Signal Processing and Control}, vol.~41, pp. 242--254, 2018.
+
 \bibitem{wang2012multiclass}
 S.~Wang and X.~Yao, ``Multiclass imbalance problems: Analysis and potential
   solutions,'' \emph{IEEE Transactions on Systems, Man, and Cybernetics, Part B
@@ -303,22 +291,5 @@ S.~Wang and X.~Yao, ``Multiclass imbalance problems: Analysis and potential
 H.~He and E.~A. Garcia, ``Learning from imbalanced data,'' \emph{IEEE
   Transactions on knowledge and data engineering}, vol.~21, no.~9, pp.
   1263--1284, 2009.
-
-\bibitem{vincent2010stacked}
-P.~Vincent, H.~Larochelle, I.~Lajoie, Y.~Bengio, and P.-A. Manzagol, ``Stacked
-  denoising autoencoders: Learning useful representations in a deep network
-  with a local denoising criterion,'' \emph{The Journal of Machine Learning
-  Research}, vol.~11, pp. 3371--3408, 2010.
-
-\bibitem{goodfellow2016deep}
-I.~Goodfellow, Y.~Bengio, A.~Courville, and Y.~Bengio, \emph{Deep
-  learning}.\hskip 1em plus 0.5em minus 0.4em\relax MIT press Cambridge, 2016,
-  vol.~1.
-
-\bibitem{kohavi1995study}
-R.~Kohavi \emph{et~al.}, ``A study of cross-validation and bootstrap for
-  accuracy estimation and model selection,'' in \emph{Ijcai}, vol.~14,
-  no.~2.\hskip 1em plus 0.5em minus 0.4em\relax Montreal, Canada, 1995, pp.
-  1137--1145.
 
 \end{thebibliography}

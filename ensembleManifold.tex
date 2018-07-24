@@ -71,7 +71,8 @@
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
  \renewcommand{\algorithmicensure}{\textbf{Output:}}
 
-\usepackage{lipsum}
+
+
 
 \usepackage{threeparttable}
 % Some very useful LaTeX packages include:
@@ -372,7 +373,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Exploring Ensemble Manifold Learning Methods Toward Automated Arrhythmia Analysis}
+\title{Feature Selection Based Manifold Learning Toward Automated Heart Arrhythmia Pattern Analysis}
 
 %
 %
@@ -446,12 +447,21 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract or keywords.
 \begin{abstract}
-\lipsum[1-2]
+Exploring the low-dimensional embedding from high-dimensional electrocardiography data set allows investigation of the data structure, which helps to analyze the cardiac electrophysiological activity.
+In this paper, we tested several existing manifold learning techniques for discovering such embeddings within the electrophysiological activity space for clinical heart monitoring and arrhythmia analysis.
+Among the existing manifold learning methods, the linear methods, such as principal component analysis; nonlinear local-based methods, such as xxx; and nonlinear global-based methods, such as Isomap and kernel PCA are explored in arrhythmia analysis.
+Based on the manifold learning techniques we constructed a ensemble manifold learning framework, which overcame the single manifold learning weakness in the classification problem.
+The framework meets both the diversity and accuracy criteria requirements in the ensemble learning technique, which improved the performance of arrhythmia analysis.
+
+The proposed framework provide a novel way exploring low-dimensional embeddings, and a decent results were achieved in the electrocardiography analysis tasks.
+The data sets for this study comes from several data sets from Physionet.
+We illustrated the intrinsic dimension analysis results and imbalance analysis for this specific task of arrhythmia analysis.
+With different choice of manifolds, we explore different combinations for this ensemble manifold learning framework.
 \end{abstract}
 
 % Note that keywords are not normally used for peerreview papers.
 \begin{IEEEkeywords}
-Manifold Learning, Ensemble Learning, Arrhythmia Analysis, ECG Classification, Machine Learning
+Machine Learning, Manifold Learning, Ensemble Learning, Arrhythmia Analysis, ECG Classification
 \end{IEEEkeywords}
 
 
@@ -461,9 +471,9 @@ Manifold Learning, Ensemble Learning, Arrhythmia Analysis, ECG Classification, M
 
 % For peer review papers, you can put extra information on the cover
 % page as needed:
-% \ifCLASSOPTIONpeerreview
-% \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
-% \fi
+ \ifCLASSOPTIONpeerreview
+ \begin{center} \bfseries EDICS Category: 3-BBND \end{center}
+ \fi
 %
 % For peerreview papers, this IEEEtran command inserts a page break and
 % creates the second title. It will be ignored for other modes.
@@ -533,7 +543,7 @@ This organization of this paper is as follows. First we illustrated some manifol
 
 
 
-\lipsum[2]
+
 
 This organization of this paper is as follows. First we illustrated some manifold learning methods from Section II-A to Section II-G, then the softmax classifier was introduced. Then we described the experiments settings and some tricks should focus in manifold learning for ECG analysis in Section-III. Section IV shows the results and comparative analyses. while Section V concludes the paper.
 
@@ -647,7 +657,7 @@ After we solve the semidefinite programming problem (SDP), the low-dimensional d
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Isomap}
-PCA finds a low-dimensional representation of the data points that best preserves the variance as which measured in the high-dimensional input space.
+%PCA finds a low-dimensional representation of the data points that best preserves the variance as which measured in the high-dimensional input space.
 Later the classical multidimensional scaling (MDS) method was proposed which finds an embedding preserving the inter-point distances\cite{Kruskal1978Multidimensional}. 
 The MDS method equivalent to PCA when those distances are Euclidean.
 While in many case, the high-dimensional data lies on or near a curved manifold, PCA and MDS may lead a mistake in the some datasets contain essential nonlinear structures that are invisible to them, like in some face recognition dataset.
@@ -718,15 +728,6 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{XXXX}
-\lipsum[1-2]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%                     LE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{XXXX}
-\lipsum[1-2]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -734,8 +735,13 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %                     LE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{XXXX}
-\lipsum[1-2]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                     LE
+%
+%%%%%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -744,7 +750,6 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{XXXX}
-\lipsum[1-2]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -752,14 +757,14 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{XXXX}
-\lipsum[1-2]
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %                     LE
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{XXXX}
-\lipsum[1-2]
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -768,7 +773,7 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Arrhythmia Classification with Softmax Classifier}
-\lipsum[1-2]
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -778,10 +783,10 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Ensemble Manifold Learning}
-\lipsum
+
 \begin{figure*}[!t]
 \includegraphics[width=7in]{EPS/systemStructure.eps}
-\caption{A Multi-layer Autoencoder Reconstruction Structure}
+\caption{A Ensemble Manifold Learning Framework}
 \end{figure*}
 
 
@@ -802,9 +807,10 @@ So the nearby points in the original space (high-dimensional) are put as close a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Methodology}
-\lipsum
 
-
+The first step for the arrhythmia classification problem is mapping the data into some manifold to gain related data embedding. 
+[1-4]
+[2]
      
 \subsection{Manifold Learning and Classification}
 The first step for the arrhythmia classification problem is mapping the data into some manifold to gain related data embedding. It can be considered as some feature extraction, or representation learning in the machine learning literatures.
@@ -827,8 +833,7 @@ As Algorithm \ref{alg1} illustrated, let $\mathcal{M}$ illustrated some mapping 
   \end{algorithmic}
  \end{algorithm}
 
-
-\lipsum[1-2]
+[1-2]
 
 
 \section{Materials And Experiments}
@@ -883,6 +888,11 @@ After segmentation, the data samples become $340$-dimensional time series.
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Intrinsic Dimension Analysis}
+
+
+
+
+
 The dimension of the embedding is a key parameter for manifold feature achieving.  
 If the dimension is too small, important data features are "collapsed", meanwhile if the dimension is too large, the projection into a manifold is too large, leading to a noisy or unstable data feature.
 When performing the manifold learning methods, the learning parameter settings could be quite arbitrary sometimes.
@@ -902,14 +912,13 @@ The dimension from the input dimension turns to $14$ with the maximum likelihood
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample Imbalance Treatment}
-For the arrhythmia analysis, a typical problem from the viewpoint of data analysis is the unbalancedness of data.
-It is due to the characters from the cardiac physiological activity.
-Even for some severe heart disease, the ECG achieved would include much more normal beats than the arrhythmia beats after segmentation.
-The skewed distribution makes manifold learning algorithms less effective, especially in the prediction of minority class samples.
-Usually, a confusion matrix had been build for the performance assess to prove the validity of proposed methods.
-Here we arbitrarily delete part of the data sample to relieve the imbalance problem, and use the confusion matrix to evaluate the classification performance. 
-The class distributions are illustrated in Table \ref{distriofData}, a more complicate and detailed analysis of impact for imbalance impact can be found in \cite{wang2012multiclass} and more about two-class situation in \cite{he2009learning}.
-
+An imbalance distribution of normal beats with abnormal ones property emerges from the continuous ECG data records, based on the cardiac physiological activity.
+A quite amount of previous works of arrhythmia analysis methods had ignored the impact from the imbalanced distribution.
+In recent years, the data analysis related research communities are paying proper attention to this problem, both binary classification\cite{he2009learning} and multi-class classification \cite{wang2012multiclass} problems.
+The usual methods to deal with multi-class classification problems are 
+In \cite{rajesh2018classification}, a re-sampling method was used to deal with ECG arrhythmia multi-class classification problem.
+In this study we will use xxxxx method to deal with the data imbalance situation, we will not discuss the impacts from different imbalance-dealing methods due to the purpose of this study.
+The class distributions for before and after- xxxx imbalance-dealing are illustrated in Table \ref{distriofData} .
 
 
 \begin{table}[!htbp]
@@ -922,10 +931,10 @@ The class distributions are illustrated in Table \ref{distriofData}, a more comp
 & Classes & N & S & V  & F \\
 \hline
 & Imbalanced  &90431  & 2774  & 7698   &8023\\
-& Ratio & 83.0\%&  2.5\%& 7.1\%  & 7.3\% \\
+& Ratio & x\%&  x\%& x\%  & x\% \\
 \hline
 & Balanced  & 18086 & 2774  & 7698 & 8023         \\
-& Ratio & 49.5\%&  7.6\%& 21\%  & 21.9\% \\
+& Ratio & xxxx\%&  xxxxx\%& xxx\%  & xxxxxx\% \\
 \hline
 \end{tabular}
 \end{threeparttable}
@@ -957,9 +966,9 @@ Se = \frac{TP}{TP+FN} \quad \\
  Sp = \frac{TN}{TN+FP}
 \end{split}
 \end{equation}
-Refer \cite{mar} for an further knowledge for parameters for algorithm evaluation in ECG data analysis.
+Refer \cite{mar} for further knowledge for parameters for algorithm evaluation in ECG data analysis.
 
-\lipsum[1-4]
+[1-4]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -972,7 +981,7 @@ Refer \cite{mar} for an further knowledge for parameters for algorithm evaluatio
 
 
 \subsection{Experimental Results With Manifold Representations}
-\lipsum
+
 \begin{table*}[!htbp]
 \begin{center}
 \begin{threeparttable}
@@ -1015,7 +1024,7 @@ Refer \cite{mar} for an further knowledge for parameters for algorithm evaluatio
 \end{center}
 \end{table*}
 
-\lipsum
+
 
 
 \begin{figure*}[!htbp]
@@ -1089,7 +1098,7 @@ In \cite{mar} a feature selection strategy had been used for the ECG classificat
 \section{Conclusion and Future Work}
 
 
-\lipsum[1-4]
+[1-4]
 
 
 
@@ -1258,7 +1267,7 @@ This work was supported by the National Natural Science Foundation of China, Gra
 % or if you just want to reserve a space for a photo:
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{YY.pdf}}]{Yan Yan}
-(M'15) received the B.Eng. degree and the MSc in Instrument Engineering at the Harbin Institute of Technology in 2010 and 2012 respectively. He worked as research assistance at the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences from 2012 to 2014. He is working on his PhD in Computer Science started from 2014.His research interests are digital signal processing, machine learning, and control system.
+(M'15) received the B.Eng. degree and the MSc in Instrument Engineering at the Harbin Institute of Technology in 2010 and 2012 respectively. He worked as research assistance at the Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences from 2012 to 2014. He is working on his PhD in Computer Science started from 2014. His research interests are biomedical signal processing, machine learning, dynamical systems and topological data analysis.
 \end{IEEEbiography}
 
 \begin{IEEEbiography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{WL.pdf}}]{Lei Wang}
